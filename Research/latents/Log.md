@@ -163,9 +163,26 @@ NEXT_WEEK_PLAN
 1. algorithmic:
 	1. variance floor: M-step it clips ψ to `varFloor = minVarFrac · diag(cov(X))` (default `minVarFrac` = 0.01) (haywood cases)
 	2. EM only needs the data through the sample covariance S = XcᵀXc/N (O(d²k))
-2. implement tests above
+2. S
 3. simulations: simulations.py, 
 	1. test speed of EM and ML on cluster
 	2. draft "smart" pPCA optimizer
-4. extra: implement randomized linalg solver or find method to not do full eigendecomposition
+4. extra: implement randomized linalg solver or find method to not do full eigendecomposition for PCA
+
+##### 10.16.2026
+1. _Heywood cases:_ added `NoiseModel.AnisotropicNoise.var_floor = min_var_frac * np.diag(np.cov(X, rowvar=False))` where `min_var_frac = 0.01`
+	1. added `FitFlags.heywood`, which observes `NoiseModel.AnisotropicNoise.floored` in `m_step`
+2. changed X^2 computation to use broadcasting
+	1. _old:_ `X2 = np.sum(X**2, axis=0)`
+	2. _new:_ `X2 = np.einsum("ij,ij->j", X, X)`
+3. changed `trace_term` computation to broadcasting
+	1. _old:_ `trace_term = np.trace(W.T @ W @ sum_Ezz)  
+	2. _new:_ `trace_term = np.trace((W.T @ W) * sum_Ezz)  
+
+Questions:
+1. would we consider closed form W solver for FA at all?
+	1. eigenspectrum of $\Psi^{-1/2} S \Psi^{-1/2}$
+
+Goal:
+1. make graphic for "smart" solver for both PCA and FA
 

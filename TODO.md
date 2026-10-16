@@ -1,19 +1,15 @@
 # TD
-1. 2 Latents Commits (Woodbury + Determinant lemma, tests suite)
-	1. latents updates slides and preparation
-
-2. book bus return for thursday (Friday: BME lunch, Yu group meeting?) 
+1. talk to byron, ask about summer internship possibility
 
 During break:
 1. work through entire fastfa optimization mathematical and code derivations, implement them completely, and be have all the proofs out in paper. 
-	1. woodbury identity derivation
-	2. cholesky solve derivation, numpy
-	3. determinant lemma derivation
-	4. haywood cases? whatever that is
+	1. cholesky solve derivation, numpy
+	2. determinant lemma derivation
 2. leetcode everyday
 3. deeply read and understand DL systems code (topo sort, etc)
+	1. finish DL sys missing lectures
 4. read the Last Lecture
-5. watch 2-3 more neuro lectures
+5. prep for tacit neurotech
 
 Weekend TD
 1. HW2 DL Sys (Due 10/8)
