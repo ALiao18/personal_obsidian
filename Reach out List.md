@@ -6,3 +6,4 @@ Summer Norman
 	Affiliations: Astera Foundations Fellow, 
 Andrii Zahorodnii
 	Brain Foundation Models, Merge Labs MOTS, MIT Brain and Cognition
+mehdiazabou@gmail.com
