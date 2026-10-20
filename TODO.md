@@ -2,10 +2,9 @@
 1. talk to byron, ask about summer internship possibility
 
 During break:
-1. work through entire fastfa optimization mathematical and code derivations, implement them completely
+1. work through entire fastfa optimization mathematical and code derivations
 2. deeply read and understand DL systems code (reverse mode AD, HW2)
-3. read the Last Lecture
-4. prep for tacit neurotech
+3. prep for tacit neurotech
 
 Weekend TD
 1. HW3 ML        (Due 10/20)
