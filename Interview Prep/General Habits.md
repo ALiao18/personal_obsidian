@@ -99,5 +99,3 @@ More trials is always better
 6. ROC-AUC
 7. PR-AUC: Area Under the Precision-Recall Curve, ignores true negatives, baseline is proportion positive class in dataset. Higher scores indicate better performance on minority class. 
 
-Confusion matrix interpretation
-
