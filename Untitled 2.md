@@ -18,5 +18,5 @@ _Tell us about an experience you enjoyed, mundane or crazy. Give us a slice of y
 
 _Links that you'd like us to check out! GitHub, portfolio, LinkedIn, Devpost, deployed projects, awards, etc. Show us your coolest work!_
 
-Felix Su, ys4858@nyu.edu
+
 
